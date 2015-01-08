@@ -28,8 +28,8 @@
       <file leaf-file-name="PAT1001.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PAT1001/PAT1001.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43781096" vertical-offset="0" max-vertical-offset="902">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <state vertical-scroll-proportion="1.0945274" vertical-offset="66" max-vertical-offset="968">
+              <caret line="33" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -378,8 +378,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/PAT1001/PAT1001.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43781096" vertical-offset="0" max-vertical-offset="902">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state vertical-scroll-proportion="1.0945274" vertical-offset="66" max-vertical-offset="968">
+          <caret line="33" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>

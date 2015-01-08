@@ -24,12 +24,15 @@ public class PAT1001 {
             sum/=1000;
             count++;
         }
-        if(flag==-1)
-            System.out.print("-");
-        for(int i=count-1;i>0;i--){
-            System.out.print(nums[i]);
-            System.out.print(",");
+        if(count==0)
+            System.out.print(0);
+        else {
+            if (flag == -1)
+                System.out.print("-");
+            System.out.print(nums[count - 1]);
+            for (int i = count - 2; i >= 0; i--) {
+                System.out.printf(",%03d",nums[i]);
+            }
         }
-        System.out.print(nums[0]);
     }
 }
