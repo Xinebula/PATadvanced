@@ -34,8 +34,6 @@ public class PAT1004 {
             allNodes[id] = aTree;
         }
         allNodes[1].level=0;
-        if(allNodes[1].n==0)
-            count[0]++;
         getNumber(1);
         System.out.print(count[0]);
         for(int i=1;i<=maxLevel+1;i++)
@@ -45,6 +43,10 @@ public class PAT1004 {
         Tree aTree = allNodes[id];
         if(aTree.level>maxLevel)
             maxLevel = aTree.level;
+        if(aTree.n==0){
+            count[aTree.level]++;
+            return;
+        }
         for(int i=0;i<aTree.n;i++){
             if(allNodes[aTree.son[i]]==null)
                 count[aTree.level+1]++;
