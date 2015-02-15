@@ -1,11 +1,12 @@
 package PAT1010;
 
+import java.math.BigInteger;
 import java.util.Scanner;
 
 /**
  * Created by xiny on 2015/1/28.
  */
-public class PAT1010 {
+public class PAT1010new {
     public static void main(String[] args){
         String N1,N2;
         int tag,radix;
@@ -17,7 +18,7 @@ public class PAT1010 {
         int[] num1 = new int[20];
         int[] num2 = new int[20];
         int num1_length,num2_length;
-        long number1=0,number2;
+        int number1=0;
         int max_digit2=0;
         if(tag==1){
             num1_length=N1.length();
@@ -72,15 +73,16 @@ public class PAT1010 {
             number1*=radix;
             number1+=num1[i];
         }
-        int r;
+        BigInteger number2;
+        BigInteger r;
         int found=0;
-        for(r=max_digit2+1;r<=100;r++){
-            number2=0;
+        for(r=BigInteger.valueOf(max_digit2 + 1);r.compareTo(BigInteger.valueOf(80))==-1;r=r.add(BigInteger.valueOf(1))){
+            number2=BigInteger.valueOf(0);
             for(int i=0;i<num2_length;i++){
-                number2*=r;
-                number2+=num2[i];
+                number2=number2.multiply(r);
+                number2=number2.add(BigInteger.valueOf(num2[i]));
             }
-            if(number2==number1){
+            if(number2.compareTo(BigInteger.valueOf(number1))==0){
                 System.out.print(r);
                 found=1;
                 break;
